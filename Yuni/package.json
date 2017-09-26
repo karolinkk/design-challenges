@@ -1,0 +1,22 @@
+{
+  "name": "yuni-challenge",
+  "version": "1.0.0",
+  "description": "Online school design challenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolinkk/design-challenges.git"
+  },
+  "author": "Kärolin Kivisikk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karolinkk/design-challenges/issues"
+  },
+  "homepage": "https://github.com/karolinkk/design-challenges#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
