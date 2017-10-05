@@ -1,0 +1,159 @@
+html {
+  margin: 0;
+  height: 100%;
+  font-family: 'arial', sans-serif;
+  color: #454559;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+.container {
+  display: grid;
+}
+
+header {
+  grid-area: header;
+  background-color: #454559;
+  text-align: right;
+  padding: 15px;
+}
+
+header > a {
+  color: #fff;
+  text-decoration: none;
+  margin: 15px;
+}
+
+header > a:active {
+  border-bottom: 3px solid #5ef4b8;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #b7bfda;
+  padding: 15px;
+  display: inline-block;
+}
+
+aside > a {
+  color: #454559;
+  box-sizing: border-box;
+  /*display: block;*/
+  text-decoration: none;
+  margin: 15px auto;
+  display: flex;
+}
+
+aside > a > span {
+  /*vertical-align: middle;*/
+  margin: auto 5px;
+  justify-content: center;
+}
+
+aside > a:active {
+  font-weight: bold;
+}
+
+aside > a:active > i {
+  color: #5ef4b8;
+}
+
+main {
+  grid-area: main;
+  background-color: #ecfeff;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #b38bc4;
+  width: 40em;
+  height: 24em;
+  /*z-index: 1;*/
+  /*justify-content: center;
+  align-items: center;*/
+  position: relative;
+}
+
+.card-1 {
+  background-color: #89fce4;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+
+  /*vertical-align: middle;*/
+
+}
+
+.card-1 > span, .card-2 > span, .card-3 > span, .card-4 > span {
+  display: inline-block;
+}
+
+.card-1 > span >  i, .card-4 > span >  i {
+  color: #3bd1be;
+}
+
+.card-2 {
+  background-color: #fd926d;
+  left: 180px;
+}
+
+.card-2 > span >  i {
+  color: #ff6443;
+}
+
+.card-3 {
+  background-color: #fc6c7b;
+  left: 360px;
+}
+
+.card-3 > span > i {
+  color: #f44d5e;
+}
+
+.card-4 {
+  background-color: #89fce4;
+  left: 540px;
+}
+
+
+.card-1, .card-2, .card-3, .card-4 {
+  height: 10em;
+  width:  10em;
+  margin-left: 2em;
+  display: inline-block;
+  /*z-index: 2;*/
+  position: absolute;
+  bottom: -40px;
+  margin: auto 32px;
+  text-align: center;
+}
+
+.card, .card-1, .card-2, .card-3, .card-4 {
+  border-radius: 3px;
+}
+
+.container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10% auto;
+  grid-template-areas:
+  "header header header header header"
+  "aside main main main main";
+}
+
+.img-circle {
+  width: 6.5em;
+  border-radius: 50%;
+  display: block;
+  margin: 2em auto 1em auto;
+}
+
+.description {
+  margin:.2em;
+  padding:0;
+}
